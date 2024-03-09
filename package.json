@@ -4,8 +4,8 @@
   "description": "This website helps us to check menu from different Kitchens",
   "main": "App.js",
   "scripts": {
-    "start": "parcel App.js",
-    "build": "parcel build App.js",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -19,6 +19,11 @@
   },
   "homepage": "https://github.com/umangbhardwaj2001/Tasthood#readme",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
