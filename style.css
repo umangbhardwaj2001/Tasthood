@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items > ul{
+  display: flex;
+}
+
+.nav-items > ul li {
+  color: #fff;
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.nav-items > ul li:hover {
+  background-color: #555;
+}
+
+.nav-items > ul li.active {
+  background-color: #fff;
+  color: #333;
+}
+
+.header > .logo {
+  width: 200px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.search-input {
+  padding: 10px; /* Padding around the input */
+  border: 1px solid #ccc; /* Border around the input */
+  border-radius: 5px; /* Rounded corners */
+  width: 40vw; /* Width of the input */
+  margin-right: 10px; /* Margin between input and button */
+}
+
+/* Style for the search button */
+.search-button {
+  padding: 10px 20px; /* Padding around the button */
+  background-color: #007bff; /* Background color of the button */
+  color: #fff; /* Text color of the button */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Hover effect for the search button */
+.search-button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Style for the res-container */
+.res-container {
+  display: flex; /* Display as flex container */
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  width: 70vw; /* Take up 70% of the viewport width */
+  margin: 30px auto; /* Center the container horizontally */
+}
+
+/* Style for the res-card */
+.res-card {
+  flex-basis: calc(33.33% - 20px); /* Set the initial flex basis to 33.33% (minus margin) */
+  margin-bottom: 20px; /* Margin between cards */
+  background-color: #fff; /* Background color of the card */
+  border: 1px solid #ccc; /* Border around the card */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 20px; /* Padding around the card content */
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+  width: 200px;
+  height: 300px;
+}
+.res-card .res-logo img {
+  max-width: 100%; /* Ensure the image does not exceed its container's width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /*Ensure the image behaves as a block element*/
+  border-radius: 5px; /* Rounded corners */
+}
+.res-card:hover {
+  transform: translateY(-5px); /* Move the card up slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  cursor: pointer;
+}
+
+.res-card:hover .res-logo img {
+  filter: grayscale(50%); /* Apply grayscale effect to the image on hover */
+}
