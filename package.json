@@ -1,0 +1,24 @@
+{
+  "name": "tasthood",
+  "version": "1.0.0",
+  "description": "This website helps us to check menu from different Kitchens",
+  "main": "App.js",
+  "scripts": {
+    "start": "parcel App.js",
+    "build": "parcel build App.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umangbhardwaj2001/Tasthood.git"
+  },
+  "author": "Umang Bhardwaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umangbhardwaj2001/Tasthood/issues"
+  },
+  "homepage": "https://github.com/umangbhardwaj2001/Tasthood#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
