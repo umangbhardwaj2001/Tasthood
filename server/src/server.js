@@ -6,6 +6,8 @@ const app = express();
 app.use(cors());
 app.get("/fetch-data", async (req, res) => {
   try {
+    // lat=12.9351929&lng=77.62448069999999
+    // lat=28.65420&lng=77.23730
     const response = await axios.get(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.65420&lng=77.23730",
       {
