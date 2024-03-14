@@ -1,29 +1,12 @@
 {
-  "name": "tasthood",
+  "name": "your-project",
   "version": "1.0.0",
-  "description": "This website helps us to check menu from different Kitchens",
-  "main": "App.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "test": "jest"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/umangbhardwaj2001/Tasthood.git"
-  },
-  "author": "Umang Bhardwaj",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/umangbhardwaj2001/Tasthood/issues"
-  },
-  "homepage": "https://github.com/umangbhardwaj2001/Tasthood#readme",
   "devDependencies": {
-    "parcel": "^2.12.0",
-    "process": "^0.11.10"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "concurrently": "^8.2.2"
   }
 }
